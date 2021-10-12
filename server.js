@@ -1,5 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const path = require('path')
 
 const PORT = process.env.PORT || 3000;
 
@@ -15,7 +16,11 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker
   useFindAndModify: false
 });
 
-// routes
+// html endpoint routes
+app.get('/:endpoint', (req,res) => {
+    res.sendFile(path.join(__dirname, `public/${req.params.endpoint}.html`))
+});
+
 app.use(require("./routes/api.js"));
 
 app.listen(PORT, () => {
