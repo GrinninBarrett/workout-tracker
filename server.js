@@ -16,13 +16,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout-tracker
   useFindAndModify: false
 });
 
-// html endpoint routes
-app.get('/:endpoint', (req,res) => {
-    res.sendFile(path.join(__dirname, `public/${req.params.endpoint}.html`))
-});
-
-app.use(require("./routes/api.js"));
+app.use(require("./routes"));
 
 app.listen(PORT, () => {
-  console.log(`App running on port ${PORT}!`);
+  console.log(`App running at ${PORT}`);
 });
