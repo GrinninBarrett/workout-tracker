@@ -29,6 +29,7 @@ router.get("/workouts/range", (req, res) => {
 });
 
 
+// Update a workout (add a new exercise to an existing workout)
 router.put('/workouts/:id', (req,res) => {
   Workout.findOneAndUpdate(
     { _id: req.params.id },
