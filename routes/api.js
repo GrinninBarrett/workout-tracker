@@ -15,6 +15,20 @@ router.get("/workouts", (req, res) => {
 });
 
 
+// Get last 7 workouts for total duration on stats page
+router.get("/workouts/range", (req, res) => {
+  Workout.find({})
+      .sort({ day: -1 })
+      .limit(7)
+      .then(dbWorkout => {
+        res.status(200).json(dbWorkout);
+      })
+      .catch((err) => {
+        res.status(400).json(err);
+      });
+});
+
+
 router.put('/workouts/:id', (req,res) => {
   Workout.findOneAndUpdate(
     { _id: req.params.id },
@@ -27,7 +41,7 @@ router.put('/workouts/:id', (req,res) => {
         }
     }
   );
-})
+});
 
 
 // Create a new workout
