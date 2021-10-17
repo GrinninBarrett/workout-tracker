@@ -28,6 +28,22 @@ This full stack application uses a [Mongo](https://www.mongodb.com/) database wi
 ## Functionality
 
 <!-- TODO: Add screenshots/GIFs to show app functionality -->
+### Application Landing Page
+
+<img src="./assets/images/landing-page.png" alt="App landing page" width="600px"><br></br>
+
+### Add Resistance Exercise
+
+<img src="./assets/images/add-resistance.png" alt="Add resistance exercise" width="600px"><br></br>
+
+### Add Cardio Exercise
+
+<img src="./assets/images/add-cardio.png" alt="Add cardio exercise" width="600px"><br></br>
+
+
+### Application Stats Page
+
+<img src="./assets/images/stats-page.png" alt="App stats page" width="600px"><br></br>
 
 
 ## Challenges
