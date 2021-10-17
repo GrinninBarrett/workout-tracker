@@ -52,6 +52,7 @@ This full stack application uses a [Mongo](https://www.mongodb.com/) database wi
 
 ## Future Development
 
+* I think it would be better design to allow a user to cancel the creation of a new workout. As it is, if a user clicks "New Workout", a new workout is created at that time, whether they add any exercises to the workout or not. If they choose to abandon the creation of a new workout, maybe because of a mis-click when they intended to add a new exercise to an existing workout (the buttons are touching, after all), they should be able to exit the page or click a "cancel" button to avoid creating a new workout.
 
 
 ## Contact
