@@ -27,7 +27,6 @@ This full stack application uses a [Mongo](https://www.mongodb.com/) database wi
 
 ## Functionality
 
-<!-- TODO: Add screenshots/GIFs to show app functionality -->
 ### Application Landing Page
 
 <img src="./assets/images/landing-page.png" alt="App landing page" width="600px"><br></br>
@@ -48,12 +47,11 @@ This full stack application uses a [Mongo](https://www.mongodb.com/) database wi
 
 ## Challenges
 
-<!-- TODO: Log challenges as they arise -->
+* The biggest challenge with this application was that at first, the process of seeding the database wasn't working. After some experimentation, I realized it was that the Workout model should be exported from `models/index.js` as an object, even though in this project it is the only model. After making that change, it worked as intended.
 
 
 ## Future Development
 
-<!-- TODO: Add ideas for future development as they arise -->
 
 
 ## Contact
