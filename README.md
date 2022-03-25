@@ -2,7 +2,7 @@
 
 This full stack application uses a [Mongo](https://www.mongodb.com/) database with [Mongoose](https://mongoosejs.com/) object modeling and an [Express](https://expressjs.com/) API to allow users to track daily workouts.
 
-<a href="https://fierce-sierra-95099.herokuapp.com">Deployed Workout Tracker Application</a>
+<a href="https://fierce-sierra-95099.herokuapp.com" target="_blank">Deployed Workout Tracker Application</a>
 
 ---
 
